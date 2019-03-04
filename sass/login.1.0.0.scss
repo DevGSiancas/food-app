@@ -1,7 +1,7 @@
-body.login{
+body.loginpg{
 
   form{
-    width: 90%;
+    width: 80%;
     max-width: 340px;
     padding: 15px 25px;
     background: #fff;
@@ -9,6 +9,10 @@ body.login{
     border-radius: 5px;
     display: block;
     margin: auto;
+
+    input{
+      outline: none;
+    }
 
     input[type="email"],
     input[type="password"]{
@@ -32,6 +36,22 @@ body.login{
       padding: 10px 0;
       font-size: 16px;
       margin: 10px auto;
+    }
+
+    a.password-forgot{
+      text-decoration: none;
+    }
+
+    a.register-facebook{
+      display: block;
+      width: 280px;
+      color: #fff;
+      background: #0077D6;
+      text-decoration: none;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: 8px;
+      margin: 10px auto 30px auto;
     }
 
   }
