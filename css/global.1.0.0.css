@@ -1,0 +1,25 @@
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif , Arial, Tahoma;
+  height: 100%;
+  background-color: #fafafa;
+  padding-top: 70px; 
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 998;
+  text-align: left;
+  color: #333;
+  background: #fff;
+}
+
+header h3{
+  font-weight: 100;
+}
