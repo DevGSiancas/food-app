@@ -12,6 +12,11 @@ $conexion_error = array(
   "description" => "Couldn't connect to DB"
 );
 
+$empty_error = array(
+  "error" => 1 ,
+  "description" => "Couldn't connect to DB"
+);
+
 $login_success = array(
   "error" => 0 ,
   "description" => "Successfully logged in"
@@ -22,7 +27,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
   if(isset($_POST["user"]) && isset($_POST["pass"])){
 
-      echo json_encode($login_success);
+      if(!empty($_POST["user"]) && !empty($_POST["pass"])){
+
+      }else{}
 
   }else{}
 
