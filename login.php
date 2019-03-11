@@ -12,13 +12,25 @@
   <?php require_once("includes/header.php"); ?>
 
   <form>
-    <input type="email" placeholder="Correo" id="username" maxlength="40" required>
+    <label for="username">Correo</label>
+    <input type="email" placeholder="ejemplo@correo.com" id="username" maxlength="40" required>
+    <label for="password">Contraseña</label>
     <input type="password" placeholder="Contraseña" id="password" maxlength="30" required>
-    <a href="javascript:void(0)" class="password-forgot">Olvidaste tu contraseña?</a>
-    <a href="#" class="register-facebook">Restrate con facebook</a>
     <input type="submit" value="Ingresar" id="login-btn">
+    <a href="javascript:void(0)" class="password-forgot">Olvidaste tu contraseña?</a>
   </form>
 
+  <div class="">
+
+  </div>
+
+  <a href="#" class="register-account">
+    Registrarme
+  </a>
+
+  <a href="#" class="register-facebook">
+    <img src="images/facebook-btn.png" alt="facebook button" width="221">
+  </a>
 
   <script src="js/jquery-min.js" type="text/javascript"></script>
   <script src="js/login.1.0.0.js" type="text/javascript"></script>

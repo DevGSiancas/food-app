@@ -1,13 +1,13 @@
-body, html {
+body, html{
   padding: 0;
   margin: 0;
-  font-family: sans-serif, Arial, Tahoma;
+  font-family: sans-serif , Arial, Tahoma;
   height: 100%;
   background-color: #fafafa;
   padding-top: 70px;
 }
 
-header {
+header{
   position: fixed;
   width: 100%;
   top: 0;
@@ -16,14 +16,14 @@ header {
   padding: 10.5px 0;
   text-align: center;
   background: linear-gradient(180deg, #FC6353 0%, #FF2D55 100%), linear-gradient(0deg, #FC6353, #FC6353);
-}
-header h2 {
-  font-weight: 100;
-}
-header #go-back {
-  position: absolute;
-  left: 20px;
-  top: 23px;
-}
 
-/*# sourceMappingURL=css/global.1.0.0.css.map */
+  h2{
+    font-weight: 100;
+  }
+
+  #go-back{
+    position: absolute;
+    left: 20px;
+    top: 23px;
+  }
+}

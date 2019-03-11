@@ -20,7 +20,7 @@ $(document).ready(function(){
             window.location = "/food-app";
         },
         error:function(){
-
+          
         }
       });
     }

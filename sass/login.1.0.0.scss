@@ -1,14 +1,22 @@
 body.loginpg{
 
   form{
-    width: 80%;
-    max-width: 340px;
+    width: 90%;
+    max-width: 310px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
     padding: 15px 25px;
     background: #fff;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.35);
-    border-radius: 5px;
     display: block;
     margin: auto;
+    text-align: center;
+
+    label{
+      color: #009688;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      display: block;
+      text-align: left;
+    }
 
     input{
       outline: none;
@@ -19,41 +27,61 @@ body.loginpg{
       display: block;
       width: 100%;
       border: none;
-      border-bottom: 1px solid rgba(0,0,0,0.2);
-      padding: 10px 0;
+      border-bottom: 1px solid #DBDBDB;
+      padding: 10px 0 10px 30px;
       margin: 10px 0;
-      font-size: 16px;
+      font-size: 18px;
+      background-repeat: no-repeat;
+      background-size: 18px;
+      box-sizing: border-box;
+    }
+
+    input[type="email"]{
+      background-image: url("../images/username.png");
+      background-position: 0px 13px;
+    }
+
+    input[type="password"]{
+      background-image: url("../images/password.png");
+      background-position: 0px 8px;
     }
 
     input[type="submit"]{
       appearance:none;
-      background:#242424;
+      background: linear-gradient(0deg, #FF2D55 0%, rgba(255, 45, 85, 0) 100%), #FC6353;
+      box-shadow: 0px 4px 4px rgba(251, 53, 97, 0.3);
+      border-radius: 10px;
       color: #fff;
       border: none;
-      border-radius: 5px;
-      width: 200px;
+      border-radius: 10px;
+      width: 131px;
       display: block;
-      padding: 10px 0;
+      padding: 12px 0;
       font-size: 16px;
-      margin: 10px auto;
+      margin: 13px auto 29px auto;
     }
 
     a.password-forgot{
       text-decoration: none;
     }
 
-    a.register-facebook{
-      display: block;
-      width: 280px;
-      color: #fff;
-      background: #0077D6;
-      text-decoration: none;
-      padding: 10px 0;
-      text-align: center;
-      border-radius: 8px;
-      margin: 10px auto 30px auto;
-    }
+  }
 
+  a.register-facebook{
+
+  }
+
+  a.register-account{
+    display: block;
+    width: 221px;
+    color: #fff;
+    background: #0077D6;
+    text-decoration: none;
+    background: linear-gradient(180deg, #009688 36.46%, #00C6B4 100%);
+    border-radius: 10px;
+    padding: 12px 0;
+    text-align: center;
+    margin: auto;
   }
 
 }
