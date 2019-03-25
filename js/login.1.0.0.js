@@ -16,11 +16,12 @@ $(document).ready(function(){
         type:"post",
         data:{user:username , pass:password},
         success:function(res , xhr , status){
-          if(res.error == 0 && status.status == 200)
+          if(res.error == 0 && status.status == 200){
             window.location = "/food-app";
+          }
         },
-        error:function(){
-          
+        error:function(err){
+          console.log("error" + err);
         }
       });
     }

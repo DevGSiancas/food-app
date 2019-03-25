@@ -1,12 +1,33 @@
+html {
+  background-image: url("../images/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+}
+
+body.loginpg {
+  text-align: center;
+  background: transparent;
+}
+body.loginpg .topper-bg {
+  border: 1px solid red;
+  height: 200px;
+  position: absolute;
+  background: red;
+  width: 100%;
+  z-index: -1;
+}
 body.loginpg form {
   width: 90%;
-  max-width: 310px;
+  max-width: 380px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
   padding: 15px 25px;
   background: #fff;
   display: block;
-  margin: auto;
+  margin: 0 auto 35px auto;
   text-align: center;
+  box-sizing: border-box;
 }
 body.loginpg form label {
   color: #009688;
@@ -55,18 +76,26 @@ body.loginpg form input[type=submit] {
 }
 body.loginpg form a.password-forgot {
   text-decoration: none;
+  color: #FC6353;
 }
 body.loginpg a.register-account {
-  display: block;
-  width: 221px;
+  width: 220px;
   color: #fff;
   background: #0077D6;
   text-decoration: none;
+  display: inline-block;
   background: linear-gradient(180deg, #009688 36.46%, #00C6B4 100%);
   border-radius: 10px;
-  padding: 12px 0;
+  padding: 11px 0;
   text-align: center;
-  margin: auto;
+  margin: 15px auto;
+}
+body.loginpg a.register-company {
+  color: #4B9972;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=css/login.1.0.0.css.map */

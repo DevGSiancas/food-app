@@ -2,9 +2,20 @@ body, html{
   padding: 0;
   margin: 0;
   font-family: sans-serif , Arial, Tahoma;
-  height: 100%;
   background-color: #fafafa;
-  padding-top: 70px;
+
+  .hr-custom{
+    display: block;
+    text-align: center;
+
+    img{
+      vertical-align: middle;
+    }
+  }
+
+  .hr-custom.dark-green{
+    color: #4F6D64;
+  }
 }
 
 header{
@@ -15,7 +26,8 @@ header{
   z-index: 998;
   padding: 10.5px 0;
   text-align: center;
-  background: linear-gradient(180deg, #FC6353 0%, #FF2D55 100%), linear-gradient(0deg, #FC6353, #FC6353);
+  background: linear-gradient(180deg, #FC6353 0%, #FF2D55 100%),
+              linear-gradient(0deg, #FC6353, #FC6353);
 
   h2{
     font-weight: 100;
@@ -26,4 +38,8 @@ header{
     left: 20px;
     top: 23px;
   }
+}
+
+.content{
+  margin-top: 64px;
 }

@@ -2,9 +2,17 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif, Arial, Tahoma;
-  height: 100%;
   background-color: #fafafa;
-  padding-top: 70px;
+}
+body .hr-custom, html .hr-custom {
+  display: block;
+  text-align: center;
+}
+body .hr-custom img, html .hr-custom img {
+  vertical-align: middle;
+}
+body .hr-custom.dark-green, html .hr-custom.dark-green {
+  color: #4F6D64;
 }
 
 header {
@@ -24,6 +32,10 @@ header #go-back {
   position: absolute;
   left: 20px;
   top: 23px;
+}
+
+.content {
+  margin-top: 64px;
 }
 
 /*# sourceMappingURL=css/global.1.0.0.css.map */
