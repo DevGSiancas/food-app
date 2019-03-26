@@ -10,11 +10,15 @@ body.loginpg {
   text-align: center;
   background: transparent;
 }
+body.loginpg h2 {
+  color: #fff;
+}
 body.loginpg .topper-bg {
-  border: 1px solid red;
-  height: 200px;
+  height: 280px;
   position: absolute;
-  background: red;
+  background-image: url("../images/login-bg-form.png");
+  background-position: center;
+  background-size: cover;
   width: 100%;
   z-index: -1;
 }
