@@ -9,6 +9,7 @@ $(document).ready(function(){
     var btnsubmit = $(this);
     var username  = $("#username").val();
     var password  = $("#password").val();
+    var errormes  = $("#error_message");
 
     if(username.length && password.length){
       $.ajax({
@@ -18,10 +19,12 @@ $(document).ready(function(){
         success:function(res , xhr , status){
           if(res.error == 0 && status.status == 200){
             window.location = "/food-app";
+          }else{
+            errormes.html(res.description);
           }
         },
         error:function(err){
-          console.log("error" + err);
+          errormes.html("Tuvimos un error, intenta mas tarde por favor.");
         }
       });
     }

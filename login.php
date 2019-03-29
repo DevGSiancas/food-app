@@ -1,3 +1,5 @@
+<?php require_once("services/php/login_validate.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -22,6 +24,7 @@
       <label for="password">Contraseña</label>
       <input type="password" placeholder="Contraseña" id="password" maxlength="30" required>
       <input type="submit" value="Ingresar" id="login-btn">
+      <p id="error_message"></p>
       <a href="javascript:void(0)" class="password-forgot">Olvidaste tu contraseña?</a>
     </form>
 

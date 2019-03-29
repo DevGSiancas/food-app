@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 header('Content-Type: application/json');
 
@@ -24,7 +25,12 @@ $query_error = array(
 
 $user_no_found = array(
   "error" => 1 ,
-  "description" => "Successfully logged in"
+  "description" => "user was not found"
+);
+
+$wrong_passw = array(
+  "error" => 1 ,
+  "description" => "Wrong password"
 );
 
 $login_success = array(
@@ -42,29 +48,36 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         require_once("php/db_connection.php");
 
-        $connexion  = new ConnectDB();
+        //$connexion  = new ConnectDB();
         $username   = $_POST["user"];
         $password   = $_POST["pass"];
 
         $statement = "SELECT password FROM users WHERE username = '$username' LIMIT 1";
 
-        if($query = mysqli_query($connexion , $statement)){
+        if($query = mysqli_query($connection , $statement)){
 
           if(mysqli_num_rows($query)){
 
             $data = mysqli_fetch_assoc($query);
+            $hash = $data["password"];
 
-            echo $data["password"];
+            if(password_verify($password , $hash)){
 
-          }else{print_r($user_no_found);}
+              $_SESSION["logged_in"] = true;
+              
+              echo json_encode($login_success);
 
-        }else{print_r($query_error);}
+            }else{echo json_encode($wrong_passw);}
 
-      }else{print_r($empty_error);}
+          }else{echo json_encode($user_no_found);}
 
-  }else{print_r($no_set_error);}
+        }else{echo json_encode($query_error);}
 
-}else{print_r($request_error);}
+      }else{echo json_encode($empty_error);}
+
+  }else{echo json_encode($no_set_error);}
+
+}else{echo json_encode($request_error);}
 
 
 
