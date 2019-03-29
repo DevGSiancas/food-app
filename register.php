@@ -5,14 +5,13 @@
   <title>Food App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.1.0.0.css">
-  <link rel="stylesheet" href="css/login.1.0.0.css">
+  <link rel="stylesheet" href="css/register.1.0.0.css">
 </head>
-<body class="loginpg">
+<body class="registerpg">
 
   <?php require_once("includes/header.php"); ?>
 
   <div class="content">
-    <div class="topper-bg"></div>
 
     <h2>Bienvenido</h2>
 
@@ -46,6 +45,7 @@
   </div>
 
   <script src="js/jquery-min.js" type="text/javascript"></script>
+  <script src="js/global.1.0.0.js" type="text/javascript"></script>
   <script src="js/login.1.0.0.js" type="text/javascript"></script>
 </body>
 </html>

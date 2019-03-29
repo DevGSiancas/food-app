@@ -7,7 +7,7 @@ class ConnectDB{
   // database variables
   private $username = "app_user";
   private $password = "0HCL5kv2hOyJCQgQ";
-  private $database = "fod_app";
+  private $database = "food_app";
   private $hostname = "localhost";
 
   // array response message

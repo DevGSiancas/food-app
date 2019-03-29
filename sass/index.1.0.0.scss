@@ -1,0 +1,126 @@
+body.indexpg{
+  background-image: url("../images/bg-global.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+
+  .title{
+    margin: 15px auto;
+    text-align: center;
+    max-width: 300px;
+
+    h1{
+      color: #4F6D64;
+      font-family: "Alfa Slab One";
+      font-size: 25px;
+    }
+
+    span{
+      display: block;
+      width: 58px;
+      margin: 13px auto 0 auto;
+      border-top: 3px solid #FC7668;
+    }
+  }
+
+  .title.curl{
+    h1{
+      &:after{
+        content: "";
+        height: 15px;
+        width: 35px;
+        background-image: url("../images/hr-curl-right.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: inline-block;
+        margin-left: 12px;
+      }
+
+      &:before{
+        content: "";
+        height: 15px;
+        width: 35px;
+        background-image: url("../images/hr-curl-left.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .promo-slider{
+    width: 92.5%;
+    margin: 0 auto 50px auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-bottom: 25px;
+  }
+
+  .promo-slider::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .promo-slider::-webkit-scrollbar-track {
+    margin: 0 40px;
+    background: #C0BFBF;
+    border-radius: 2px;
+  }
+
+  .promo-slider::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #4F6D64;;
+  }
+
+  .menu-post{
+    width: 97%;
+    max-width: 315px;
+    margin: auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 6px;
+    font-family: sans-serif;
+    padding: 10px;
+
+    label{
+      display: block;
+      font-size: 28px;
+      margin: 0 25px;
+      padding: 4px 0 12px 0;
+    }
+
+    p{
+      font-size: 16px;
+    }
+
+    a{
+      color: #fff;
+      font-size: 19px;
+      background: linear-gradient(0deg, #FF2D55 0%, rgba(255, 45, 85, 0) 100%), #FC6353;
+      text-decoration: none;
+      padding: 12px 0;
+      border-radius: 10px;
+      display: block;
+      margin: auto;
+      width: 131px;
+    }
+
+  }
+
+  .menu-post.bg1{
+    height: 373px;
+    background-image: url("../images/post-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+
+    label{
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+}
