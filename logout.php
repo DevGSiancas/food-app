@@ -2,7 +2,7 @@
 session_start();
 session_destroy();
 
-header("location: /food_app");
+header("location: /food-app");
 
 die("Invalid Page");
 

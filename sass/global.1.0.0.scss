@@ -36,6 +36,29 @@ header{
     left: 20px;
     top: 23px;
   }
+
+  .hd-icon{
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 18px;
+  }
+
+  .hd-icon.cart{
+    background-image: url("../icons/cart.png");
+    right: 20px;
+  }
+
+  .hd-icon.alert{
+    background-image: url("../icons/alert.png");
+    right: 68px
+  }
+
+
 }
 
 .content{
