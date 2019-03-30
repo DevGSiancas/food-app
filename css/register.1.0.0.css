@@ -1,0 +1,96 @@
+html {
+  background-image: url("../images/bg-global.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 100%;
+}
+
+body.registerpg form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+body.registerpg form label {
+  color: #009688;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+body.registerpg form input[type=email] {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #DBDBDB;
+  padding: 10px 0 10px 30px;
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  box-sizing: border-box;
+  background-image: url("../images/username.png");
+  background-position: 0px 13px;
+  outline: none;
+}
+body.registerpg form input[type=email]:focus {
+  border-bottom: 2px solid #FC6353;
+}
+body.registerpg form .pattern {
+  text-align: center;
+  margin-top: 10px;
+}
+body.registerpg form .pattern .pttrn {
+  display: inline-block;
+  margin: 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #d1d1d1;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+}
+body.registerpg form .pattern .pttrn.selected {
+  border: 5px solid #FC6353;
+  transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+}
+body.registerpg form .error-message {
+  text-align: center;
+  color: #FF2D55;
+}
+body.registerpg form .footer {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+body.registerpg form .footer span.reset {
+  color: #009688;
+  font-size: 16px;
+  margin-right: 20px;
+}
+body.registerpg form .footer input[type=submit] {
+  appearance: none;
+  background: linear-gradient(0deg, #FF2D55 0%, rgba(255, 45, 85, 0) 100%), #FC6353;
+  box-shadow: 0px 4px 4px rgba(251, 53, 97, 0.3);
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 131px;
+  margin-left: 20px;
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=css/register.1.0.0.css.map */

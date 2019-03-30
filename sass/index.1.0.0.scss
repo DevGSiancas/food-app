@@ -4,53 +4,6 @@ body.indexpg{
   background-position: center top;
   background-size: contain;
 
-  .title{
-    margin: 15px auto;
-    text-align: center;
-    max-width: 300px;
-
-    h1{
-      color: #4F6D64;
-      font-family: "Alfa Slab One";
-      font-size: 25px;
-    }
-
-    span{
-      display: block;
-      width: 58px;
-      margin: 13px auto 0 auto;
-      border-top: 3px solid #FC7668;
-    }
-  }
-
-  .title.curl{
-    h1{
-      &:after{
-        content: "";
-        height: 15px;
-        width: 35px;
-        background-image: url("../images/hr-curl-right.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        display: inline-block;
-        margin-left: 12px;
-      }
-
-      &:before{
-        content: "";
-        height: 15px;
-        width: 35px;
-        background-image: url("../images/hr-curl-left.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        display: inline-block;
-        margin-right: 12px;
-      }
-    }
-  }
-
   .promo-slider{
     width: 92.5%;
     margin: 0 auto 50px auto;

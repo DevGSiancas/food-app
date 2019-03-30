@@ -48,11 +48,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         require_once("php/db_connection.php");
 
-        //$connexion  = new ConnectDB();
         $username   = $_POST["user"];
         $password   = $_POST["pass"];
 
-        $statement = "SELECT password FROM users WHERE username = '$username' LIMIT 1";
+        $statement = "SELECT * FROM users WHERE username = '$username' LIMIT 1";
 
         if($query = mysqli_query($connection , $statement)){
 
@@ -60,11 +59,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             $data = mysqli_fetch_assoc($query);
             $hash = $data["password"];
+            $name = $data["name"];
 
             if(password_verify($password , $hash)){
 
               $_SESSION["logged_in"] = true;
-              
+              $_SESSION["user_name"] = ucwords($name);
+
               echo json_encode($login_success);
 
             }else{echo json_encode($wrong_passw);}

@@ -8,16 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.1.0.0.css">
   <link rel="stylesheet" href="css/login.1.0.0.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 </head>
 <body class="loginpg">
 
   <?php require_once("includes/header.php"); ?>
 
   <div class="content">
+
     <div class="topper-bg"></div>
 
     <h2>Bienvenido</h2>
-
+    
     <form>
       <label for="username">Correo</label>
       <input type="email" placeholder="ejemplo@correo.com" id="username" maxlength="40" required>
@@ -50,5 +53,6 @@
 
   <script src="js/jquery-min.js" type="text/javascript"></script>
   <script src="js/login.1.0.0.js" type="text/javascript"></script>
+  <script src="js/global.1.0.0.js" type="text/javascript"></script>
 </body>
 </html>
