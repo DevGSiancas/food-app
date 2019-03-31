@@ -33,7 +33,8 @@ class UserFunctions{
 
   function createAccount($username , $hash , $connection){
 
-    $statement = "INSERT INTO users VALUES ('$username' , '$hash' , NULL , NULL , NULL , NOW() , NULL)";
+    $avatarUrl = "/food-app/images/avatar.png";
+    $statement = "INSERT INTO users VALUES ('$username' , '$hash' , NULL , NULL , NULL , NOW() , NULL , '$avatarUrl')";
 
     if(!mysqli_query($connection , $statement)){
       return "error";

@@ -1,0 +1,33 @@
+html {
+  background-image: url("../images/bg-global.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: contain;
+  height: 100%;
+}
+
+body.questionspg .question-wrap {
+  margin: 12px;
+  padding: 12px;
+}
+body.questionspg .question-wrap p.ask {
+  color: #4F6D64;
+  font-size: 16px;
+}
+body.questionspg .question-wrap p.ans {
+  color: #656565;
+  font-size: 14px;
+}
+body.questionspg .question-wrap span.who {
+  color: #878787;
+  font-size: 12px;
+  float: left;
+}
+body.questionspg .question-wrap span.when {
+  color: #878787;
+  font-size: 12px;
+  float: right;
+}
+
+/*# sourceMappingURL=css/questions.1.0.0.css.map */
