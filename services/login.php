@@ -47,23 +47,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       if(!empty($_POST["user"]) && !empty($_POST["pass"])){
 
         require_once("php/db_connection.php");
+        require_once("php/user_functions.php");
 
-        $username   = $_POST["user"];
-        $password   = $_POST["pass"];
+        $userObject = new UserFunctions();
 
-        $statement = "SELECT * FROM users WHERE username = '$username' LIMIT 1";
+        $username   = mysqli_real_escape_string($connection , htmlspecialchars($_POST["user"]));
+        $password   = mysqli_real_escape_string($connection , htmlspecialchars($_POST["pass"]));
 
-        if($query = mysqli_query($connection , $statement)){
+        $userRegister = $userObject->userExists($username , $connection);
 
-          if(mysqli_num_rows($query)){
+        if($userRegister != "error"){
 
-            $data = mysqli_fetch_assoc($query);
+          if($userRegister != "noexists"){
+
+            $data = $userRegister;
             $hash = $data["password"];
-            $name = $data["name"];
+            $id   = $data["user_id"];
+            $name = ($data["name"] == NULL) ? "Humano" : $data["name"];
 
             if(password_verify($password , $hash)){
 
               $_SESSION["logged_in"] = true;
+              $_SESSION["user_id"]   = $id;
               $_SESSION["user_name"] = ucwords($name);
 
               echo json_encode($login_success);

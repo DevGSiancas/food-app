@@ -1,7 +1,7 @@
 body.indexpg {
   background-image: url("../images/bg-global.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top;
   background-size: contain;
 }
 body.indexpg .promo-slider {
@@ -64,6 +64,7 @@ body.indexpg .menu-post.bg1 {
 }
 body.indexpg .menu-post.bg1 label {
   border-bottom: 1px solid #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=css/index.1.0.0.css.map */

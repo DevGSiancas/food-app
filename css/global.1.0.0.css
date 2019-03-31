@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
 body, html {
   padding: 0;
   margin: 0;
-  font-family: sans-serif, arial, tahoma;
+  font-family: "Roboto", sans-serif;
 }
 body .hr-custom, html .hr-custom {
   display: block;
@@ -30,6 +32,16 @@ header {
   padding: 10.5px 0;
   text-align: center;
   background: linear-gradient(180deg, #FC6353 0%, #FF2D55 100%), linear-gradient(0deg, #FC6353, #FC6353);
+}
+header .logo {
+  display: block;
+  width: 85px;
+  height: 39px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
 }
 header .hd-icon {
   height: 25px;
@@ -91,6 +103,40 @@ header .hd-icon.alert {
   text-decoration: none;
   color: #444;
 }
+.menu-wrapper ul li a.icon {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F6D64;
+  display: block;
+  padding: 5px 5px 5px 40px;
+  background-size: 20px;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.menu-wrapper ul li a.icon.profile {
+  background-image: url("../icons/profile.png");
+}
+.menu-wrapper ul li a.icon.news {
+  background-image: url("../icons/news.png");
+}
+.menu-wrapper ul li a.icon.promo {
+  background-image: url("../icons/promo.png");
+}
+.menu-wrapper ul li a.icon.today {
+  background-image: url("../icons/today.png");
+}
+.menu-wrapper ul li a.icon.join {
+  background-image: url("../icons/join.png");
+}
+.menu-wrapper ul li a.icon.question {
+  background-image: url("../icons/question.png");
+}
+.menu-wrapper ul li a.icon.report {
+  background-image: url("../icons/report.png");
+}
 
 .menu-wrapper.active {
   margin-left: 0%;
@@ -122,16 +168,18 @@ header .hd-icon.alert {
 /*                          CONTENT STYLES                            */
 /**********************************************************************/
 .content {
-  margin-top: 63px;
+  margin: 60px auto 0 auto;
+  max-width: 1050px;
 }
 .content .title {
   margin: 15px auto;
   text-align: center;
   max-width: 300px;
+  position: relative;
 }
 .content .title h1 {
   color: #4F6D64;
-  font-family: "Alfa Slab One";
+  font-family: "Alfa Slab One", cursive;
   font-size: 25px;
 }
 .content .title span {
@@ -139,6 +187,22 @@ header .hd-icon.alert {
   width: 58px;
   margin: 13px auto 0 auto;
   border-top: 3px solid #FC7668;
+}
+.content .title a {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  display: block;
+  background-image: url("../icons/back.png");
+  background-position: center;
+  background-size: contain;
+}
+.content .title.left {
+  margin: 10px 0 10px 60px;
+  text-align: left;
 }
 .content .title.curl h1:after {
   content: "";

@@ -1,0 +1,57 @@
+html {
+  background-image: url("../images/bg-global.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 100%;
+}
+
+body.profilepg .content {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 8px 8px;
+  padding-bottom: 20px;
+}
+body.profilepg .content ul {
+  padding: 0;
+  margin: 0;
+}
+body.profilepg .content ul li {
+  list-style: none;
+  padding: 2px 2px 2px 60px;
+  position: relative;
+}
+body.profilepg .content ul li a {
+  text-decoration: none;
+}
+body.profilepg .content ul li.ttl {
+  color: #009688;
+  background-repeat: no-repeat;
+  background-position: 22px center;
+  background-size: 20px;
+}
+body.profilepg .content ul li.ttl.profile {
+  background-image: url("../icons/user.png");
+}
+body.profilepg .content ul li.ttl.payment {
+  background-image: url("../icons/money.png");
+}
+body.profilepg .content ul li.sub {
+  margin: 20px 0;
+}
+body.profilepg .content ul li.sub a {
+  color: #4F6D64;
+  display: block;
+}
+body.profilepg .content ul li.sub a:after {
+  content: "";
+  border-left: 4px solid #20A397;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+
+/*# sourceMappingURL=css/profile.1.0.0.css.map */

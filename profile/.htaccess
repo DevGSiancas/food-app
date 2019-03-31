@@ -1,9 +1,5 @@
 #remove php file extension-e.g. https://example.com/file.php will become https://example.com/file
-
 RewriteEngine on
-
-RewriteRule    ^dish/([0-9]+)/?$    dish.php?id=$1    [NC,L]
-
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]

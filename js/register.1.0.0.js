@@ -15,17 +15,37 @@ $(document).ready(function(){
   function createAccount(e){
     e.preventDefault();
 
-    if($(".pattern .pttrn.selected").length){
+    var username = $(".username").val();
+    var errormes = $(".error-message");
+    var pattern  = $(".pattern .pttrn.selected");
 
-      if($(".pattern .pttrn.selected").length >= 5){
+    if(username.length){
 
-        var user = $("#user").val();
-        var pass = getPatternData();
+      if(pattern.length){
 
+        if(pattern.length >= 5){
 
-      }else{$(".error-message").html("Selecionar minimo 5 opciones de patron");}
+          $.ajax({
+            url:"services/register",
+            type:"post",
+            data:{user:username , pass:getPatternData()},
+            success:function(res , xhr , status){
+              if(res.error == 0 && status.status == 200){
+                window.location = "/food-app";
+              }else{
+                errormes.html(res.description);
+              }
+            },
+            error:function(err){
+              errormes.html("Tuvimos un error, intenta otra vez por favor.");
+            }
+          });
 
-    }else{$(".error-message").html("Selecionar patron.");}
+        }else{errormes.html("Selecionar minimo 5 opciones de patron");}
+
+      }else{errormes.html("Olvidaste seleccionar patron.");}
+
+    }else{errormes.html("Olvidaste tu usuario");}
   }
 
   function getPatternData(){

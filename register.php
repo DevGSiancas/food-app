@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.1.0.0.css">
   <link rel="stylesheet" href="css/register.1.0.0.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 </head>
 <body class="registerpg">
 
@@ -20,7 +18,7 @@
         <h1>Registro</h1><span></span>
       </div>
       <label for="username">Correo</label>
-      <input type="email" placeholder="correo@ejemplo.com" maxlength="45" id="user" required>
+      <input type="email" placeholder="correo@ejemplo.com" maxlength="45" class="username" required>
 
       <label for="username">Patron</label>
       <div class="pattern">

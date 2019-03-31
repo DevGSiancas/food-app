@@ -9,8 +9,6 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.1.0.0.css">
   <link rel="stylesheet" href="css/index.1.0.0.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 </head>
 <body class="indexpg">
 
@@ -19,8 +17,7 @@ session_start();
   <div class="content">
 
     <div class="title">
-      <br>
-      <h1>Aprovecha nuestras promos!</h1>
+      <h1><br>Aprovecha nuestras promos!</h1>
       <span></span>
     </div>
 

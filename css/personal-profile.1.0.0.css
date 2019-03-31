@@ -1,0 +1,68 @@
+html {
+  background-image: url("../images/bg-global.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 100%;
+}
+
+body.personalinfopg .content {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 8px 8px;
+  padding-bottom: 20px;
+}
+body.personalinfopg .content ul {
+  padding: 0;
+  margin: 0;
+}
+body.personalinfopg .content ul li {
+  list-style: none;
+  padding: 2px 2px 2px 60px;
+  position: relative;
+}
+body.personalinfopg .content ul li a {
+  text-decoration: none;
+}
+body.personalinfopg .content ul li.ttl {
+  color: #009688;
+  background-repeat: no-repeat;
+  background-position: 22px center;
+  background-size: 20px;
+}
+body.personalinfopg .content ul li.ttl.profile {
+  background-image: url("../icons/user.png");
+}
+body.personalinfopg .content ul li.ttl.email {
+  background-image: url("../icons/email.png");
+}
+body.personalinfopg .content ul li.ttl.telephone {
+  background-image: url("../icons/telephone.png");
+}
+body.personalinfopg .content ul li.ttl.avatar {
+  background-image: url("../icons/avatar.png");
+}
+body.personalinfopg .content ul li.data {
+  margin: 20px 0;
+}
+body.personalinfopg .content ul li.data:after {
+  content: "";
+  border-left: 4px solid #20A397;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+body.personalinfopg .content ul li.data input {
+  color: #4F6D64;
+  font-size: 14px;
+  display: block;
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/*# sourceMappingURL=css/personal-profile.1.0.0.css.map */
